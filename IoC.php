@@ -20,7 +20,7 @@ class IoC {
      * @param   string  $name   (The key)
      * @return  mixed
      */
-    public static function make($name)
+    public static function resolve($name)
     {
         if ( static::registered($name) )
         {
