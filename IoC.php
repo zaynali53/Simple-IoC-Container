@@ -40,4 +40,5 @@ class IoC {
     {
         return array_key_exists($name, static::$registry);
     }
+
 }
