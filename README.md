@@ -14,5 +14,5 @@ IoC::register('db', function() {
     return new PDO('mysql:host=localhost;dbname=test', 'user', 'pass');
 });
 
-$pdo = IoC::resolve('db');
+$pdo = IoC::make('db');
 ```
