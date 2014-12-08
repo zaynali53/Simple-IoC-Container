@@ -1,7 +1,5 @@
 <?php 
 
-namespace Mark;
-
 class IoC {
 
     protected static $registry = array();
