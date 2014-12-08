@@ -44,7 +44,7 @@ abstract class IoC {
     /**
      * Determine whether the key is registered
      * @param  string $name (The key)
-     * @return bool 		(Whether the key exists or not)
+     * @return bool         (Whether the key exists or not)
      */
     public static function isRegistered($name)
     {
