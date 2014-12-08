@@ -38,7 +38,7 @@ abstract class IoC {
             return $name($args);
         }
 
-        throw new \Exception("Error: Key \"$name\" is not registered!\n");
+        throw new \Exception("Error: Key \"$name\" is not registered! \n");
     }
 
     /**
