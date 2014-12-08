@@ -11,8 +11,42 @@ include 'IoC.php';
 
 IoC::register('db', function() {
     
-    return new PDO('mysql:host=localhost;dbname=test', 'user', 'pass');
+    return new \PDO('mysql:host=localhost;dbname=test', 'user', 'pass');
 });
 
-$pdo = IoC::make('db');
+try {
+
+    $pdo = IoC::make('db');
+
+} catch (Exception $e) {
+
+	echo $e->getMessage(), die();
+}
+```
+
+```php
+// Usage with Arguments
+
+include 'IoC.php';
+
+IoC::register('db', function($args) {
+
+	if (is_array($args)) extract($args);
+
+    return new \PDO('mysql:host=' . $dbhost . ';dbname=' . $dbname, $dbuser, $dbpass);
+});
+
+try {
+
+	$pdo = IoC::make('db', [
+		'dbname' => 'test',
+		'dbhost' => 'localhost',
+		'dbuser' => 'root',
+		'dbpass' => ''
+		]);
+
+} catch (Exception $e) {
+
+	echo $e->getMessage(), die();
+}
 ```
