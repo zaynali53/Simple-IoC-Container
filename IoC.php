@@ -1,8 +1,9 @@
 <?php 
 /**
  * IoC Container (https://github.com/zaynali53/Simple-IoC-Container)
- * @author  Zayn Ali (https://github.com/zaynali53)
- * @link    Facebook (https://facebook.com/zaynali53)
+ * Licensed under MIT (https://github.com/zaynali53/Simple-IoC-Container/blob/master/LICENSE)
+ * @author Zayn Ali (https://github.com/zaynali53)
+ * @link Facebook (https://facebook.com/zaynali53)
  */
 
 abstract class IoC {
