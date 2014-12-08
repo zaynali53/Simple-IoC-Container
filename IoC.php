@@ -35,7 +35,9 @@ abstract class IoC {
 
             $name = self::$registry[$name];
 
-            return $name($args);
+            if ( ! is_null($args)) return $name($args);
+
+            return $name();
         }
 
         throw new \Exception("Error: Key \"$name\" is not registered! \n");
