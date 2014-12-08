@@ -1,7 +1,7 @@
 <?php 
 /**
  * IoC Container (https://github.com/zaynali53/Simple-IoC-Container)
- * Author: Zayn Ali (https://github.com/zaynali53)
+ * @author: Zayn Ali (https://github.com/zaynali53)
  */
  
 class IoC {
